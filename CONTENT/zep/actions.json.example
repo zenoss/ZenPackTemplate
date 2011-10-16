@@ -1,6 +1,6 @@
 // This file is used to load triggers and notifications when your ZenPack is
 // installed. If existing triggers and notifications are found with the same
-// name, they will be updated with the new properties specified im this file.
+// name, they will be updated with the new properties specified in this file.
 //
 // The file should be renamed to actions.json to be picked up during the
 // ZenPack's installation.
