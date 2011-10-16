@@ -102,15 +102,15 @@ namespace can be the protocol that is used to collect the data. If you are not
 using a common protocol it is acceptable to skip the second portion of the
 namespace and have something like "community.MongoDB" instead.
 
-plugins/
-    __init__.py
-    community/
+    plugins/
         __init__.py
-        snmp/
+        community/
             __init__.py
-            ExampleMap.py
+            snmp/
+                __init__.py
+                ExampleMap.py
 
-Note that the __init__.py files must exist and should be empty files. Otherwise
+Note that the ```__init__.py``` files must exist and should be empty files. Otherwise
 your modeler plugins won't be imported and usable within Zenoss.
 
 #### objects/
