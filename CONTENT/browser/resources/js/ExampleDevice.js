@@ -18,7 +18,7 @@ ZC.registerName('ExampleComponent', _t('Example'), _t('Examples'));
 
 /*
  * Custom component grid panel. This controls the grid that gets displayed for
- * components of the type set in "componenType".
+ * components of the type set in "componentType".
  */
 ZC.ExampleComponentGridPanel = Ext.extend(ZC.ComponentGridPanel, {
     subComponentGridPanel: false,
