@@ -9,7 +9,14 @@ from ZenPacks.zenoss.ZenETL.reportable \
 from .ExampleComponent import ExampleComponent
 
 
-class ExampleComponentReportable(Reportable):
+class BaseReportable(Reportable):
+    """Abstract base class for our customer IReportable implementations."""
+
+    def __init__(self, context):
+        self.context = context
+
+
+class ExampleComponentReportable(BaseReportable):
     implements(IReportable)
     adapts(ExampleComponent)
 
@@ -24,7 +31,7 @@ class ExampleComponentReportable(Reportable):
         """
         return [
             ('attributeOne', 'int',
-                self.context.attribuetOne, MARKER_LENGTH),
+                self.context.attributeOne, MARKER_LENGTH),
 
             ('attributeTwo', 'string',
                 self.context.attributeTwo, DEFAULT_STRING_LENGTH),
