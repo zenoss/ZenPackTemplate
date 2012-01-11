@@ -28,6 +28,9 @@
 #         ('zExampleString', 'default value', 'string'),
 #         ('zExampleInt', 411, 'int'),
 #         ('zExamplePassword', 'notsecure', 'password'),
+#         ('zExampleBooleanFalse', False, 'boolean'),
+#         ('zExampleBooleanTrue', True, 'boolean'),
+#         ('zExampleMultiLine', ['First Line','Second Line'], 'lines'),
 #         ]
 #
 #     def install(self, dmd):
